@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e63946"/>
+      <stop offset="100%" stop-color="#c1121f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+
+  <!-- Sound wave arcs – left outer -->
+  <path d="M 148 145 Q 78 256 148 367" fill="none" stroke="url(#red)" stroke-width="22"
+        stroke-linecap="round" opacity="0.35"/>
+  <!-- Sound wave arcs – left inner -->
+  <path d="M 188 186 Q 138 256 188 326" fill="none" stroke="url(#red)" stroke-width="26"
+        stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Sound wave arcs – right inner -->
+  <path d="M 324 186 Q 374 256 324 326" fill="none" stroke="url(#red)" stroke-width="26"
+        stroke-linecap="round" opacity="0.8"/>
+  <!-- Sound wave arcs – right outer -->
+  <path d="M 364 145 Q 434 256 364 367" fill="none" stroke="url(#red)" stroke-width="22"
+        stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Central play triangle (white, slightly offset right for optical center) -->
+  <polygon points="208,172 208,340 376,256" fill="#ffffff" opacity="0.96"/>
+</svg>
